@@ -1,0 +1,24 @@
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.input-text {
+    border: 1px solid black;
+  }
+.error-text {
+    color: red;
+    font-size: 1rem;
+}
+
+.hover-button {
+    background-color: #d1d5db; /* Gray color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hover-button:hover {
+    background-color: #a1a1aa; /* Darker gray color */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}

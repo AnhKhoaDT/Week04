@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./default.css">
+</head>
+<body class="flex flex-col justify-center min-h-screen bg-gray-200">
+    <h1 class="text-6xl font-bold  text-center mt-10">Bé tập tính</h1>
+    <div class="bg-white w-2/3  max-x-screen-md mt-10 p-4 m-auto shadow-md">
+        <div class=" flex flex-col space-y-4 ">
+            <div class="flex flex-row ">
+               
+                <label for="so1" class=" text-2xl ml-20 mr-10 mt-2">Số thứ nhất</label>
+                <input type="text" id="so1" name="so1" class="input-text w-2/5 h-12 ">
+                <input type="radio" id="cong1" name="phep_tinh1" value="Cộng" class="ml-10 mr-2 transform scale-125">
+                <label for="cong1" class="text-2xl mr-20 mt-2">Cộng</label>
+                <input type="radio" id="tru1" name="phep_tinh1" value="Trừ" class=" mr-2 transform scale-125">
+                <label for="tru1" class="text-2xl mt-2">Trừ</label>     
+            
+            </div>
+            <div class="flex flex-row  ">
+               
+                <label for="so2" class=" text-2xl ml-20 mr-14 mt-2">Số thứ hai</label>
+                <input type="text" id="so2" name="so2" class="input-text w-2/5 h-12 ">
+                <input type="radio" id="nhan1" name="phep_tinh1" value="Nhân" class="ml-10 mr-2 transform scale-125">
+                <label for="nhan1" class="text-2xl mr-20 mt-2">Nhân</label>
+                <input type="radio" id="chia1" name="phep_tinh1" value="Chia" class=" mr-2 transform scale-125">
+                <label for="chia1" class="text-2xl mt-2">Chia</label>     
+                
+            </div>
+       
+            <div class="flex flex-row  ">
+                <label for="ketqua" class="text-2xl  ml-20 mr-20">Kết quả</label>
+                <input type="text" id="ketqua" name="ketqua" class="input-text w-2/5 h-12 mr-5 " readonly>
+                <button type="button" onclick="tinhKetQua()" class="hover-button w-40 ">Tính</button>
+
+            </div>
+            <div class="flex flex-row">
+                <span id="thongbao" class="ml-20 mt-2 text-2xl text-black">Thông báo</span>
+                <span id="error" class=" error-text ml-4 mt-3 text-2xl text-red-500"></span>
+            </div>
+        </div>
+    </div>
+   
+ <script src="./script.js"></script>
+</body>
+</html>
